@@ -1,13 +1,17 @@
 .wrapper {
-   display: grid;
- grid-template-areas:
+  display: grid;
+  grid-template-areas:
     "header header header"
     "main main main"
     "main main main"
     "footer footer footer"
   ;
-background-image: url('BackDesign.jpg');
-background-size: 1500px 800px;
+  background-image: url('i4.jpg');
+  background-size: 1500px 800px;
+}
+
+html {
+  scroll-behavior: smooth;
 }
 
 .header {
@@ -17,142 +21,105 @@ background-size: 1500px 800px;
 .main {
    grid-area: main;
 }
-
-/* add sections and content for .featured-articles, .article-cards, .card, .card-body, and image formats. */  
-.featured-articles {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-around;
-}
- 
-.article-cards {
-  min-height: calc(100vh - 300px);
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  gap: 0.5rem;
-}
-.footer {
+footer {
       grid-area: footer;
+      
 }
-/* WRITE YOUR CODE HERE */
+
 .card {
   min-height: 35rem;
   max-width: 23rem;
+  border-color:purple;
+  box-shadow: 10px 10px 5px rgb(173, 202, 230);
+  opacity: 0.95;
+  animation: fade-in-right 1000ms forwards;
+  
 }
- 
+
+p{
+  color: rgb(50, 168, 151);
+  font-size: larger;
+}
+
 .card-body {
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
 }
+
 .card-title
 {
   text-align: center;
-  color: #0d6efd;
+  background-color:goldenrod;
+  color: white;
 }
+
 #img{
   height: 228.42px;
 }
-.h1
+
+li
 {
-  text-align: center;
+  margin-left: 20px;
+  margin-right: 20px;
 }
-#h2
+.hoverchange:hover
 {
-  text-align: left;
+  background-color: goldenrod;
 }
 
-
-/* h2{
-  color: white;
-}
-p{
-  color: white;
-  font-size: 20px;
-} */
-/* ul {
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
-  overflow: hidden;
-  background-color: #333;
-  border-color: palevioletred;
-  border-style:hidden;
-} */
-
-/* li {
-  float: left;
-}
-
-li a {
-  display: block;
-  color: white;
-  text-align: center;
-  padding: 20px 40px;
-  text-decoration: none;
-} */
-
-li a:hover {
-  background-color: #0d6efd;
-  
-}
-
-li a:active{
-  background-color: #0d6efd;
-  color: white;
-}
-
-/* footer
+hoverchange:active
 {
-  background-color:beige;
-  border: orangered;
-  border-style: double;
-} */
+  background-color: goldenrod;
+}
 
-
-/* .personal-photo
-{
-  width:400px;
-  height:500px;
-  border: orangered;
-  border-style: double;
-} */
 .grid
 {
   display: grid;
-  grid-template-columns: 200px;
+  grid-template-columns: 1fr 1fr;
+  margin: 5px;
+  gap: 10px;
+  border-width: 2px;
+  text-indent: initial;
 }
-.grid-container
+.save
 {
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  /* background-image: url('./motivational1.jpg') */
+  position: center;
+  color:red;
 }
+
+label
+{
+  color: rgb(50, 168, 151);
+}
+
+h3{
+  color: white;
+  background-color: goldenrod;
+  text-align: center;
+}
+
 #divIntro{
   display: block;
+  text-indent: 50px;
 }
+
 #divIntro:target{
  display:block;
 }
 
-#divIntro{
-text-indent: 50px;
-}
-#divAboutMe:target{
+#divAboutMe:target, #divContactMe:target{
  display:block;
  text-indent: 50px;
+  min-height: 35rem;
+  max-width: 23rem;
+  border-color:purple;
+  box-shadow: 10px 10px 5px rgb(173, 202, 230);
+  background-color: white;
+  opacity: 0.90;
 }
 
-#divAboutMe{
-  display: none;
-}
-
-#divContactMe:target{
- display:block;
-}
-
-#divContactMe{
+#divAboutMe, #divContactMe{
   display: none;
 }
 
@@ -163,9 +130,9 @@ text-indent: 50px;
   height:500px;
   width:400px;
   overflow:scroll;
-  border-color:black ;
   border-style:groove;
 }
+
 .side-img
 {
   height: 500px;
@@ -173,8 +140,32 @@ text-indent: 50px;
   border-width: 2px;
 }
 
- p
- {
-   font-size: larger;
-   padding: 5px;
- }
+p
+{
+  font-size: larger;
+  padding: 5px;
+}
+
+header{
+  opacity: 0.90;
+  width: 100%;
+  border: 3px solid #73AD21;
+}
+
+.txtcolor
+{
+  color: white;
+}
+
+.fa {
+  font-size: 500px;
+  cursor: pointer;
+  user-select: none;
+  size:1000px;
+  
+}
+
+.fa:hover {
+  color:gold;
+  
+}
