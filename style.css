@@ -100,16 +100,12 @@ h3{
 }
 
 #divIntro{
-  display: block;
   text-indent: 50px;
 }
 
-#divIntro:target{
- display:block;
-}
 
 #divAboutMe:target, #divContactMe:target{
- display:block;
+
  text-indent: 50px;
   min-height: 35rem;
   max-width: 23rem;
@@ -119,9 +115,7 @@ h3{
   opacity: 0.90;
 }
 
-#divAboutMe, #divContactMe{
-  display: none;
-}
+
 
 .flex-container
 {
