@@ -1,0 +1,180 @@
+.wrapper {
+   display: grid;
+ grid-template-areas:
+    "header header header"
+    "main main main"
+    "main main main"
+    "footer footer footer"
+  ;
+background-image: url('BackDesign.jpg');
+background-size: 1500px 800px;
+}
+
+.header {
+    grid-area: header;
+}
+
+.main {
+   grid-area: main;
+}
+
+/* add sections and content for .featured-articles, .article-cards, .card, .card-body, and image formats. */  
+.featured-articles {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+ 
+.article-cards {
+  min-height: calc(100vh - 300px);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 0.5rem;
+}
+.footer {
+      grid-area: footer;
+}
+/* WRITE YOUR CODE HERE */
+.card {
+  min-height: 35rem;
+  max-width: 23rem;
+}
+ 
+.card-body {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+.card-title
+{
+  text-align: center;
+  color: #0d6efd;
+}
+#img{
+  height: 228.42px;
+}
+.h1
+{
+  text-align: center;
+}
+#h2
+{
+  text-align: left;
+}
+
+
+/* h2{
+  color: white;
+}
+p{
+  color: white;
+  font-size: 20px;
+} */
+/* ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #333;
+  border-color: palevioletred;
+  border-style:hidden;
+} */
+
+/* li {
+  float: left;
+}
+
+li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 20px 40px;
+  text-decoration: none;
+} */
+
+li a:hover {
+  background-color: #0d6efd;
+  
+}
+
+li a:active{
+  background-color: #0d6efd;
+  color: white;
+}
+
+/* footer
+{
+  background-color:beige;
+  border: orangered;
+  border-style: double;
+} */
+
+
+/* .personal-photo
+{
+  width:400px;
+  height:500px;
+  border: orangered;
+  border-style: double;
+} */
+.grid
+{
+  display: grid;
+  grid-template-columns: 200px;
+}
+.grid-container
+{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  /* background-image: url('./motivational1.jpg') */
+}
+#divIntro{
+  display: block;
+}
+#divIntro:target{
+ display:block;
+}
+
+#divIntro{
+text-indent: 50px;
+}
+#divAboutMe:target{
+ display:block;
+ text-indent: 50px;
+}
+
+#divAboutMe{
+  display: none;
+}
+
+#divContactMe:target{
+ display:block;
+}
+
+#divContactMe{
+  display: none;
+}
+
+.flex-container
+{
+  display: flex;
+  flex-direction: column;
+  height:500px;
+  width:400px;
+  overflow:scroll;
+  border-color:black ;
+  border-style:groove;
+}
+.side-img
+{
+  height: 500px;
+  width: 400px;
+  border-width: 2px;
+}
+
+ p
+ {
+   font-size: larger;
+   padding: 5px;
+ }
