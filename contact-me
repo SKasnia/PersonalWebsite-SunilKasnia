@@ -61,14 +61,19 @@
         
         <div class="col-md-4">
           <div class="card mb-4">
-           <div>
-               <p>My name is Sunil Kasnia. I am living in Vancouver.
-           I can help you in the work in related to HTML, javascript and CSS. 
-           You can send me your requirements and then I will send you quotations within 24 hours. I can provide the work within your required time-period.
-       
-           Feel free to contact me to ask any questions.</p>
-              
-            </div>
+          <div class="grid" >
+        <h3>Contact Me</h3>
+        <label for="fname" ><b>First Name:</b></label>
+        <input type="text" id="fname" name="fname" pattern="[A-Za-z]" title="Please enter only characters">
+        <label for="lname" ><b>Last Name:</b></label>
+        <input type="text" id="lname" name="lname" pattern="[A-Za-z]" title="Please enter only characters">
+        <label for="email" ><b>Email:</b></label>
+        <input type="text" id="email" name="email"  pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" title="Please enter valid email address">
+        <label for="tnumber" ><b>Telephone number:</b></label>
+        <input type="tnumber" id="tnumber" name="tnumber"pattern="[0-9]" title="Please enter only numbers"></br>
+        <input type="button" onclick="window.location='mailto:sunil.kasnia7@gmail.com;'" value="Save" />  
+      </div>
+     
           </div>
         </div>
         <div class="col-md-4">
