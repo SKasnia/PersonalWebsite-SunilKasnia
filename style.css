@@ -34,7 +34,7 @@ h1 {
 }
 
 
-.dark-mode {
+.dark-theme {
   background-color: #333;
   color: #f0f0f0;
   transition: all 0.4s ease-in;
